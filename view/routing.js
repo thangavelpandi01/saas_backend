@@ -13,7 +13,7 @@ router.post("/login",userController.login);
 router.post("/logout", auth, userController.logout); 
 router.post("/subscribe/:planId", auth, userController.subscribePlan); 
 router.get("/my-subscriptions", auth, userController.getMySubscriptions);
-router.post("/dashboard", auth, userController.Dashboard);
+router.post("/userDashboard", auth, userController.userDashboard);
 
 
 router.post("/create-order",auth, userController.createOrder);
