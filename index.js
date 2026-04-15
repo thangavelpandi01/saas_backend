@@ -31,8 +31,8 @@ app.use(express.json());
 // ======================
 // ✅ STATIC FILES (IMPORTANT FIX)
 // ======================
-app.use("/uploads", express.static(path.join(__dirname, "uploads")));
-
+// app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+app.use("/uploads", express.static(path.resolve("uploads")));
 // ======================
 // ✅ ROUTES
 // ======================
