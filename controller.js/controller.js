@@ -487,7 +487,7 @@ async createOrder(req, res) {
 
 }
 
-async Dashboard(req, res) {
+async userDashboard(req, res) {
   try {
     const userId = req.user.id || req.user.userId;
     const userObjectId = new mongoose.Types.ObjectId(userId);
