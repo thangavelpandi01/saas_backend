@@ -14,7 +14,8 @@ const app = express();
 // ======================
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "http://localhost:517",
+    "https://saas-backend-1-eia8.onrender.com"
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
